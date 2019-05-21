@@ -16,6 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="css/blog.css" rel="stylesheet">
 </head>
 
@@ -25,11 +26,11 @@
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a class="blog-header-logo text-dark" href="index.html">C.A.F.E.</a>
+                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/logo.svg" class="nav-logo"><img src="img/logos/logo-small.svg" class="nav-logo-small"></a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <div class="cust-nav-item"><a class="btn btn-md btn-outline-primary" href="#">Contact Us</a></div>
-                    <a class="btn btn-md btn-primary" href="#">Donate</a>
+                    <div class="cust-nav-item"><a class="btn btn-md btn-outline-primary" href="contact-us.html">Contact Us</a></div>
+                    <a class="btn btn-md btn-primary" href="donate.html">Donate</a>
                 </div>
             </div>
         </header>
@@ -44,13 +45,13 @@
         <div id="bgvideo" class="rounded">
             <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="img/home/sanding.MP4" type="video/mp4">
+            <source src="img/videos/index.MP4" type="video/mp4">
             </video>
             <div class="container p-3 p-md-5 text-white rounded">
                 <div class="col-md-6 px-0">
-                    <h1 class="display-4 font-italic">We're a Non-Profit Bringing Art to the DC Metro Community</h1>
-                    <p class="lead my-3">We believe art brings communities together. Let's build a safer, happier and more inclusive DC Metro community through artistic events and activities. Come support or join us to make our dream a reality!</p>
-                    <p class="lead mb-0"><a href="#" class="btn btn-primary font-weight-bold">Donate Now</a></p>
+                    <h1 class="display-4 font-italic">We're a Non-Profit Bringing Art to the DMV Community</h1>
+                    <p class="lead my-3">We believe art brings communities together. Let's build a safer, happier and more inclusive DMV community through artistic events and activities. Come support or join us to make our dream a reality!</p>
+                    <p class="lead mb-0"><a href="donate.html" class="btn btn-primary font-weight-bold">Donate Now</a> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link" class="btn btn-outline-light font-weight-bold">Volunteer</a></p>
                 </div>
             </div>
         </div><br/><br/>
@@ -59,7 +60,20 @@
     
 
     <footer class="blog-footer">
-        <p>Copyright Community Art for Everyone 2019</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-phone"></i> Call us at <a href="tel:555-555-5555">571-992-8204</a><br/><i class="fas fa-envelope-open-text"></i> Email us at <a href= "mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Help Support our Mission</h5><p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link"><i class="fas fa-clipboard"></i> Sign up as a volunteer</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Connect with Us</h5><p><a href="https://www.meetup.com/Community-Art/"><i class="fab fa-meetup"></i> MeetUp</a><br/><a href="https://www.facebook.com/cafedmv/"><i class="fab fa-facebook"></i> Facebook</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap core JavaScript

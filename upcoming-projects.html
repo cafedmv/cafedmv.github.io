@@ -18,6 +18,7 @@
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="css/blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a class="blog-header-logo text-dark" href="index.html">C.A.F.E.</a>
+                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/logo.svg" class="nav-logo"><img src="img/logos/logo-small.svg" class="nav-logo-small"></a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
                     <div class="cust-nav-item"><a class="btn btn-md btn-outline-primary" href="#">Contact Us</a></div>
@@ -42,20 +43,21 @@
                 <p class="p-2 nav-selected">Upcoming Projects</p>
             </nav>
         </div>
-    </div>
-    <div class="container">
-                <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-            <div class="row p-3">
+        
+        <div id="bgvideo" class="rounded">
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/videos/upcoming.mp4" type="video/mp4">
+            </video>
+            <div class="container p-3 p-md-5 text-white rounded">
                 <div class="col-md-6 px-0">
                     <h1 class="display-4 font-italic">Upcoming Projects</h1>
                     <p class="lead my-3">We bring art to the community to make it a safer space for us all, but we can't do it without your help. Come volunteer with us to bring positive change together.</p>
-                    <p class="lead mb-0"><a href="#" class="btn btn-primary font-weight-bold">Volunteer and Make a Difference</a></p>
-                </div>
-                <div class="col-sm-0  col-md-4">
-                    <img src="img/icons/sketch.png" style="width:100%;" />
+                    <p class="lead mb-0"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link" class="btn btn-primary font-weight-bold">Volunteer With Us</a></p>
                 </div>
             </div>
-        </div><br/>
+        </div><br/><br/>
+        
     </div>
 
     <main role="main" class="container">
@@ -86,7 +88,7 @@
                 <div class="blog-post">
                     <h2 class="blog-post-title">Public Piano Project</h2>
                     <p class="blog-post-meta">June, 2019 @ <a href="https://goo.gl/maps/qnfnjwVowUdECyrR8">ACCA Pop-Up Park</a></p>
-                    <img class="blog-post-image" src="img/thumb/smile-annandale.jpg" />
+                    <img class="blog-post-image" src="img/events/annandale-piano.jpg" />
 
                     <p>We will inspire the image of “smile” into the pop-up park and the participants will develop an affection for the Annandale area.</p>
                     <p>
@@ -97,9 +99,6 @@
                         <div class="d-flex justify-content-end align-items-center">
                             <div class="p-1"><a href="#" class="btn btn-primary">Help Fund Our Project</a></div>
                         </div>
-                        <div class="d-flexjustify-content-end align-items-center">
-                            <div class="p-1"><a href="#" class="btn btn-outline-primary">Volunteer</a></div>
-                        </div>
                     </div>
                 </div>
                 <!-- /.blog-post -->
@@ -107,15 +106,16 @@
                 <div class="blog-post">
                     <h2 class="blog-post-title">Chalk Art Event</h2>
                     <p class="blog-post-meta">July 27, 2019 @ <a href="https://goo.gl/maps/qnfnjwVowUdECyrR8">ACCA Pop-Up Park</a></p>
-                    <img class="blog-post-image" src="img/thumb/smile-annandale.jpg" />
+                    <img class="blog-post-image" src="img/events/annandale-chalk.jpg" />
 
-                    <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                    <p>We will inspire the image of “smile” into the pop-up park and the participants will develop an affection for the Annandale area.</p>
+                    <p>
+                        Our community art activities have three parts; as mural art, a public piano, and a chalk art event.</p>
+                    <p>
+                        This project will be a cooperation consisting of local artists, residents, and CAFE volunteers. The activities will foster connections amongst the participants and within the community.</p>
                     <div class="row p-2">
                         <div class="d-flex justify-content-end align-items-center">
                             <div class="p-1"><a href="#" class="btn btn-primary">Help Fund Our Project</a></div>
-                        </div>
-                        <div class="d-flexjustify-content-end align-items-center">
-                            <div class="p-1"><a href="#" class="btn btn-outline-primary">Volunteer</a></div>
                         </div>
                     </div>
                 </div>
@@ -124,14 +124,6 @@
             <!-- /.blog-main -->
 
             <aside class="col-md-4 blog-sidebar">
-
-                <div class="p-3">
-                    <h4 class="font-italic">Connect with Us</h4>
-                    <ol class="list-unstyled">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="https://www.meetup.com/Community-Art/">Meetup</a></li>
-                    </ol>
-                </div>
                 <div class="p-3">
                     <h4 class="font-italic">Past Events</h4>
                     <ol class="list-unstyled">
@@ -148,10 +140,20 @@
     <!-- /.container -->
 
     <footer class="blog-footer">
-        <p>Copyright CAFE 2019</p>
-        <p>
-            <a href="#">Back to top</a>
-        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-phone"></i> Call us at <a href="tel:555-555-5555">571-992-8204</a><br/><i class="fas fa-envelope-open-text"></i> Email us at <a href= "mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Help Support our Mission</h5><p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link"><i class="fas fa-clipboard"></i> Sign up as a volunteer</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Connect with Us</h5><p><a href="https://www.meetup.com/Community-Art/"><i class="fab fa-meetup"></i> MeetUp</a><br/><a href="https://www.facebook.com/cafedmv/"><i class="fab fa-facebook"></i> Facebook</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap core JavaScript
