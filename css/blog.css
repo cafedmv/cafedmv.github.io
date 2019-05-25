@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 /* media queries */
 /* If the screen size is 500px wide or less, hide the element */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 420px) {
     .nav-logo {
         display: none;
     }
@@ -219,3 +219,4 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 10px;
     }
 }
+

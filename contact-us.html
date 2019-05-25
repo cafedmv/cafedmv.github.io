@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Donate</title>
+    <title>Contact Us</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
 
@@ -30,8 +30,8 @@
                     <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/logo.svg" class="nav-logo"><img src="img/logos/logo-small.svg" class="nav-logo-small"></a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <div class="cust-nav-item"><a class="btn btn-md btn-outline-primary" href="contact-us.html">Contact Us</a></div>
-                    <a class="btn btn-md btn-primary" href="#">Donate</a>
+                    <div class="cust-nav-item"><a class="btn btn-md btn-outline-primary" href="#">Contact Us</a></div>
+                    <a class="btn btn-md btn-primary" href="donate.html">Donate</a>
                 </div>
             </div>
         </header>
@@ -46,30 +46,24 @@
 
         <div class="container p-3 p-md-5 bg-light rounded">
             <div class="p-3 row">
-                <div class="col-md-5 px-0">
-                    <h1 class="display-4 font-italic">Help us do more</h1>
-                    <p class="lead my-3">We want to make the DMV better, but we can't do it without your help. We're a nonprofit that relies on support from people like you. <b>If everyone reading this gives just $30, we can bring transforming art to our communities for the rest of 2019.</b> Help us bring safety through beauty to the DMV, together.</p>
+                <div class="col-md-4 px-0">
+                    <h1 class="display-4 font-italic">You, the people</h1>
+                    <p>It's our community, so we want to hear from everyone- including you. If you want to learn more about what we do or want to get in touch, feel free to call or email us. We'll get back to you within a day!</p>
+                    <hr/>
+                    <p><i class="fas fa-phone"></i> Call us at <a href="tel:555-555-5555">571-992-8204</a>
+                        <p/>
+                        <p><i class="fas fa-envelope-open-text"></i> Email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
+                        <hr/>
                 </div>
-                <div class="col-md-5 p-3 offset-md-1">
-                    <h3 id="impact-title">Become a Donor</h3>
-                    <p id="impact">Give a child her first art lesson through a community art workshop. Art supplies don't cost much, and they go a long way with the right direction. Help us empower our youth!</p>
-                    <div id="donate" class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-primary">
-                            <input type="radio" name="options" autocomplete="off" checked value="15"> $15</label>
-                        <label class="btn btn-outline-primary active">
-                            <input type="radio" name="options" value="30" id="option30" autocomplete="off"> $30
-                        </label>
-                        <label class="btn btn-outline-primary">
-                            <input type="radio" name="options" value="50" autocomplete="off"> $50</label>
-                        <label class="btn btn-outline-primary">
-                            <input type="radio" name="options" value="0" autocomplete="off"> Other</label>
-                    </div>
-                    <br/><br/>
-                    <p class="lead mb-0"><a id="paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FBWXEKNQ7VPFW&source=url" class="btn btn-primary font-weight-bold">Give with Paypal</a></p>
+                <div class="col-md-4 offset-1">
+                    <h2>Local Government and Companies</h2>
+                    <p>Let's bring community art to your people. Fill out the form below to commission a project and we'll reach out to you with an estimated quote.</p><p> If you need help, just give us a call at <a href="tel:555-555-5555">571-992-8204</a> and we'll be more than happy to help you figure out the details.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScFRuzQH3SmuRKIvRN3IlYWg002q_K6p0FY8y1dlE7hi02zEQ/viewform?usp=sf_link" class="btn btn-primary">Commission a Project</a>
                 </div>
             </div>
-        </div>
-    </div><br/><br/>
+        </div><br/><br/>
+    </div>
+
     <!-- /.container -->
 
     <footer class="blog-footer">
@@ -94,10 +88,20 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="js/donate.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/holder.min.js"></script>
+    <script>
+        Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+        });
+    </script>
 </body>
 
 </html>
