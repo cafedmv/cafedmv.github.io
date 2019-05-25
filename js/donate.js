@@ -19,6 +19,6 @@ $('#donate .btn').on('click', function(event) {
     else if (donation==0){
     $("#paypal").attr("href", "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YL5APXPWNFFUQ&source=url");
         $("#impact").text("The possibilities are endless, contact us so we can help make your ideas a reality!");
-        $("#impact-title").text("You Name the Price");
+        $("#impact-title").text("You Name the Gift");
     }
 });
