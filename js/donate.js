@@ -1,9 +1,9 @@
 $('#donate .btn').on('click', function(event) {
   console.log($(this).find('input').val());
   var donation = $(this).find('input').val();
-  if(donation==15){
+  if(donation==10){
       $("#paypal").attr("href", "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=22XGHRXPCW4GW&source=url");
-      $("#impact").text("Give a child her first art lesson through a community art workshop. Art supplies don't cost much, and they go a long way with the right direction. Help us empower our youth!");
+      $("#impact").text("Give a child her first art lesson through a community art workshop in the DMV. Art supplies don't cost much, but they go a long way with our youth. Help us empower our children!");
       $("#impact-title").text("Become a Donor");
   }
     else if (donation==30){
