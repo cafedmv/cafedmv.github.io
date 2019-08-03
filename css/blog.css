@@ -7,6 +7,87 @@
     color: #d3d3d3;
 }
 
+.header-border {
+    border-bottom: 1px solid #333;
+    padding: 10px;
+}
+
+body {
+    font-size: 1.1rem;
+}
+
+/* button updates */
+.btn {
+    border-radius: 0px;
+}
+
+
+.btn-primary {
+    background-color: #fff300;
+    border-color: #fff300;
+    color: #000;
+    font-weight: 700;
+    transition: linear .1s;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: black;
+    border-color:black;
+    border-radius: 20px;
+}
+
+.btn-text {
+    color: white;
+    transition: linear .1s;
+    font-weight: 500;
+    border-radius: 0px;
+    border-bottom: solid 2px #fff300;
+    padding: .175rem .25rem;
+}
+
+.btn-text:hover {
+    color:black;
+    border-bottom: solid 2px #fff300;
+    background-color: #fff300;
+}
+
+.btn-text-alt {
+    color: black;
+    transition: linear .1s;
+    font-weight: 500;
+    border-radius: 0px;
+    border-bottom: solid 2px #fff300;
+    padding: .175rem .25rem;
+}
+
+.btn-text-alt:hover {
+    color:black;
+    border-bottom: solid 2px #fff300;
+    background-color: #fff300;
+}
+
+.btn-text-nav-sub {
+    color: black;
+    transition: linear .1s;
+    font-weight: 500;
+}
+
+.nav-sub-select {
+    border-bottom: 3px solid #000;
+    color: black;
+    font-weight: 700;
+    transition: linear .1s;
+}
+
+.btn-text-nav-sub:hover {
+    border-bottom: 3px solid 
+        
+        #fff300;
+    color: black;
+}
+
+
 .bootstrap-pad {
     padding-top:30px;
     padding-bottom:30px;
@@ -23,7 +104,7 @@
 
 .nav-logo-small {
     display: none;
-    max-width: 90px;
+    max-width: 200px;
 }
 
 #bgvideo {
@@ -96,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-scroller {
+    display: none;
   position: relative;
   z-index: 2;
   height: 2.75rem;
@@ -205,7 +287,18 @@ h1, h2, h3, h4, h5, h6 {
 /* media queries */
 /* If the screen size is 500px wide or less, hide the element */
 
+@media only screen and (max-width: 995px) {
+
+    .nav-scroller {
+        display:inline;
+    }
+    .cust-nav-item {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 420px) {
+
     .nav-logo {
         display: none;
     }
@@ -218,5 +311,8 @@ h1, h2, h3, h4, h5, h6 {
     .btn-mobile-pad {
         margin-bottom: 10px;
     }
+    .video-pad {
+    padding-top:30px;
+}
 }
 
