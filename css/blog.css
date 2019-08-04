@@ -21,6 +21,13 @@ body {
     border-radius: 0px;
 }
 
+.bg-mobile {
+    display: none;
+}
+
+.bg-desktop {
+     background:url(../img/bg/bg-cafe-2.svg) no-repeat; background-size: contain;
+}
 
 .btn-primary {
     background-color: #fff300;
@@ -44,6 +51,7 @@ body {
     border-radius: 0px;
     border-bottom: solid 2px #fff300;
     padding: .175rem .25rem;
+    font-size: 1.1rem;
 }
 
 .btn-text:hover {
@@ -59,6 +67,7 @@ body {
     border-radius: 0px;
     border-bottom: solid 2px #fff300;
     padding: .175rem .25rem;
+    font-size: 1.1rem;
 }
 
 .btn-text-alt:hover {
@@ -295,6 +304,12 @@ h1, h2, h3, h4, h5, h6 {
     .cust-nav-item {
         display: none;
     }
+    .bg-desktop {
+     background: none;
+    }
+    .bg-mobile {
+        display: inline;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -313,6 +328,6 @@ h1, h2, h3, h4, h5, h6 {
     }
     .video-pad {
     padding-top:30px;
-}
+    }
 }
 
