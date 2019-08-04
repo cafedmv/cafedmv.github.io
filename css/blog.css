@@ -51,7 +51,7 @@ body {
     border-radius: 0px;
     border-bottom: solid 2px #fff300;
     padding: .175rem .25rem;
-    font-size: 1.1rem;
+    
 }
 
 .btn-text:hover {
@@ -126,8 +126,8 @@ body {
 
 #bgvideo video {
   position: absolute;
-  top: 100%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
   min-width: 100%;
   min-height: 100%;
   width: auto;
