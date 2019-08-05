@@ -19,16 +19,19 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="css/blog.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853964-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-140853964-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853964-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140853964-1');
+    </script>
 </head>
 
 <body>
@@ -51,31 +54,65 @@
 
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex">
-                 <a class="btn btn-text-nav-sub" href="index.html">Home</a>
+                <a class="btn btn-text-nav-sub" href="index.html">Home</a>
                 <a class="btn btn-text-nav-sub" href="about-us.html">About Us</a>
                 <a class="btn btn-text-nav-sub" href="our-projects.html">Our Projects</a>
                 <a class="btn btn-text-nav-sub nav-sub-select" href="contact-us.html">Contact Us</a>
             </nav>
         </div>
 
-        <div class="container p-3 p-md-5 bg-light rounded">
-            <div class="p-3 row">
-                <div class="col-md-4 px-0">
+        <div class="bg-desktop-contact rounded">
+            <div class="container p-3 p-md-5 rounded">
+                <div class="col-lg-5 px-0">
                     <h1 class="display-4 font-italic">Contact Us</h1>
                     <p>It's our community, so we want to hear from everyone- including you. If you want to learn more about what we do or want to get in touch, feel free to call or email us. We'll get back to you within a day!</p>
                     <hr/>
-                    <p><i class="fas fa-phone"></i> Call us at <a href="tel:555-555-5555">571-992-8204</a>
+                    <p><a href="tel:555-555-5555" class="btn btn-text-alt"><i class="fas fa-phone"></i> 571-992-8204</a>
                         <p/>
-                        <p><i class="fas fa-envelope-open-text"></i> Email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
+                        <p><a href="mailto:cafedmv@gmail.com" class="btn btn-text-alt"><i class="fas fa-envelope-open-text"></i> cafedmv@gmail.com</a></p>
                         <hr/>
                 </div>
-                <div class="col-md-4 offset-md-1">
-                    <h2>Local Government and Companies</h2>
-                    <p>Let's bring community art to your people. Fill out the form below to commission a project and we'll reach out to you with an estimated quote.</p><p> If you need help, just give us a call at <a href="tel:555-555-5555">571-992-8204</a> and we'll be more than happy to help you figure out the details.</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScFRuzQH3SmuRKIvRN3IlYWg002q_K6p0FY8y1dlE7hi02zEQ/viewform?usp=sf_link" class="btn btn-primary">Commission a Project</a>
+                <div class="col-sm-12 bg-mobile">
+                    <img src="img/bg/bg-cafe-mobile.svg" style="width:100%;" />
                 </div>
             </div>
         </div><br/><br/>
+    </div>
+    <div id="gov-and-companies" class="bg-light p-md-5 bootstrap-pad">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6">
+                <h2>Local Government and Companies</h2>
+                <p>Want to bring community art to your people? Fill out our quick application form using the button below to commission a project and we'll reach out to you with a free estimated quote. All profits made will go directly to funding future local community art projects!</p>
+                <p> If you need more details, just give us a call at <a href="tel:555-555-5555">571-992-8204</a> and we'll be more than happy to help you figure out the details.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScFRuzQH3SmuRKIvRN3IlYWg002q_K6p0FY8y1dlE7hi02zEQ/viewform?usp=sf_link" class="btn btn-primary">Commission a Project</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/icons/gov-project.png" style="width:100%;" />
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="volunteer" class="p-md-5 bootstrap-pad">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6">
+                <h2>Volunteer</h2>
+                <p>We're going to need alot of help to bring change to our community, and we hope you can join in too. You don't need any artistic experience- or any creative talent either. Instead, we'll need energy, passion and a love for bringing life and art to local communities.</p>
+                <p>We're currently looking for:</p>
+                <ul>
+                    <li><b>Event volunteers</b> to help facilitate workshops, teach children, or set up/take down props.</li>
+                    <li><b>Media gurus</b> who know how to take pics and hashtag like an influencer. The more awareness we can get, the more support we'll receive to do what we do best.</li>
+                    <li><b>Artists and creatives</b> to help us lead workshops, ideate projects, or just paint/draw/create awesome art on public canvases for the community to enjoy.</li>
+                    <li><b>And anyone else with a passion for community</b> to help bring the energy to our community art projects and events.</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScFRuzQH3SmuRKIvRN3IlYWg002q_K6p0FY8y1dlE7hi02zEQ/viewform?usp=sf_link" class="btn btn-primary">Sign Up to Volunteer</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/icons/volunteers-2.png" style="width:100%;" />
+            </div>
+        </div>
+        </div>
     </div>
 
     <!-- /.container -->
@@ -89,7 +126,7 @@
                     <p><i class="fas fa-phone"></i> Call us at <a href="tel:555-555-5555">571-992-8204</a><br/><i class="fas fa-envelope-open-text"></i> Email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
                 </div>
                 <div class="col-sm-4 footer-padding">
-                    <h5>Help Support our Mission</h5>
+                    <h5>Volunteer with Us</h5>
                     <p><i class="fas fa-clipboard"></i> Sign up as a volunteer on our quick <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link"> registration form</a></p>
                 </div>
                 <div class="col-sm-4">

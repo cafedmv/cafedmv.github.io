@@ -26,6 +26,10 @@ body {
 }
 
 .bg-desktop {
+     background:url(../img/bg/bg-cafe-alt.png) no-repeat; background-size: contain;
+}
+
+.bg-desktop-contact {
      background:url(../img/bg/bg-cafe-2.svg) no-repeat; background-size: contain;
 }
 
@@ -35,6 +39,7 @@ body {
     color: #000;
     font-weight: 700;
     transition: linear .1s;
+    font-size: 1.1rem;
 }
 
 .btn-primary:hover {
@@ -51,6 +56,7 @@ body {
     border-radius: 0px;
     border-bottom: solid 2px #fff300;
     padding: .175rem .25rem;
+    font-size: 1.1rem;
     
 }
 
@@ -303,6 +309,12 @@ h1, h2, h3, h4, h5, h6 {
     }
     .cust-nav-item {
         display: none;
+    }
+    .bg-desktop-contact {
+     background: none;
+    }
+    .bg-mobile-contact {
+        display: inline;
     }
     .bg-desktop {
      background: none;
