@@ -167,6 +167,16 @@ body {
   z-index: 1;
 }
 
+.video-pad {
+    margin-bottom: 30px;
+    border-top: 5px dashed #fff300;
+    border-bottom: 5px dashed #fff300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+}
+
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -345,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 10px;
     }
     .video-pad {
-    padding-top:30px;
+    margin-top:30px;
     }
 }
 
