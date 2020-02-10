@@ -412,8 +412,8 @@ h6 {
 
 @media only screen and (max-width: 420px) {
     .timeline {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
         border-left: none;
     }
     .featured-project {
