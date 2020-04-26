@@ -17,7 +17,8 @@ p a {
     background-size: 100% 0.05em;
 }
 
-p {
+p,
+li{
     font-family: 'Noto Serif', serif;
     color: #343a40;
 }
@@ -453,10 +454,10 @@ h3 {
 
 @media only screen and (max-width: 420px) {
     .xl-padding {
-        4rem 1.5rem;
+        4rem .5rem;
     }
     .lg-padding {
-        padding: 3rem 1.5rem;
+        padding: 2.5rem .5rem;
     }
     .timeline {
         padding-left: 30px;
@@ -474,6 +475,9 @@ h3 {
     }
     .video-pad {
         margin-top: 30px;
+    }
+    .nav-logo {
+        max-width: 150px;
     }
     .breadcrumbs {
     padding-top: 0px;
