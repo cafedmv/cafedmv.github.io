@@ -1,5 +1,10 @@
 /* josh's additions */
 
+a {
+    color: #212758;
+    
+}
+
 p a {
     text-decoration: none;
     text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff,
@@ -10,6 +15,11 @@ p a {
     background-repeat: repeat-x;
     background-position: bottom 0.05em center;
     background-size: 100% 0.05em;
+}
+
+p {
+    font-family: 'Noto Serif', serif;
+    color: #343a40;
 }
 
 p a:hover {
@@ -31,6 +41,7 @@ p a:hover {
 
 body {
     font-size: 1.1rem;
+    line-height: 2rem;
 }
 
 /* button updates */
@@ -54,19 +65,20 @@ body {
 }
 
 .btn-primary {
-    background-color: #fff300;
-    border-color: #fff300;
-    color: #000;
+    background-color: #3d489e;
+    border: 0px;
+    border-radius: 3rem;
+    color: #fff;
     font-weight: 700;
     transition: linear .1s;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding: .5rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn-primary:hover {
-    color: white;
-    background-color: black;
-    border-color: black;
-    border-radius: 20px;
+    color: #333;
+    background-color: #fec90b;
 }
 
 .btn-text {
@@ -81,43 +93,44 @@ body {
 }
 
 .btn-text:hover {
-    color: black;
+    color: #222758;
     border-bottom: solid 2px #fff300;
     background-color: #fff300;
 }
 
 .btn-text-alt {
-    color: black;
-    transition: linear .1s;
+    color: #222758;
+    transition: all ease .1s;
     font-weight: 500;
     border-radius: 0px;
-    border-bottom: solid 2px #fff300;
-    padding: .175rem .25rem;
-    font-size: 1.1rem;
-    margin-top: 15px;
+    border-bottom: solid 4px #3d489e;
+    padding: .5rem 0.3rem;
+    font-size: 1.2rem;
 }
 
 .btn-text-alt:hover {
-    color: black;
-    border-bottom: solid 2px #fff300;
-    background-color: #fff300;
+    transition: all ease .1s;
+    border-bottom: dashed 5px #fec90b;
+    color: #222758;
 }
 
 .btn-text-nav-sub {
-    color: black;
-    transition: linear .1s;
+    color: #222758;
     font-weight: 500;
+    transition: all ease .1s;
+    font-family: montserrat;
 }
 
 .nav-sub-select {
-    border-bottom: 3px solid #000;
-    color: black;
+    border-bottom: 3px solid #222758;
+    color: #222758;
     font-weight: 700;
-    transition: linear .1s;
+    transition: all ease .1s;
+    font-family: montserrat;
 }
 
 .btn-text-nav-sub:hover {
-    border-bottom: 3px solid #fff300;
+    border-bottom: 3px solid #fec90b;
     color: black;
 }
 
@@ -140,11 +153,6 @@ body {
 
 .nav-logo {
     max-width: 220px;
-}
-
-.nav-logo-small {
-    display: none;
-    max-width: 200px;
 }
 
 .breadcrumbs {
@@ -193,7 +201,7 @@ body {
 
 .video-pad {
     margin-bottom: 30px;
-    border-top: 7px solid #fff300;
+    border-top: 7px solid #f0575e;
     padding-bottom: 10px;
 }
 
@@ -204,8 +212,7 @@ body {
 }
 
 .featured-project {
-    padding: 60px 30px 60px 30px;
-    background-color: #212529;
+    background-color: #f7934b;
     color: white;
 }
 
@@ -231,13 +238,38 @@ body {
     text-decoration: none;
 }
 
+.headline {
+    font-size: 3.5rem;
+}
+
+.xl-padding {
+    padding: 10rem 0rem;
+}
+
+.lg-padding {
+    padding: 6rem 0rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #212758;
+    font-weight: 700;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2,
+h3 {
+    margin-bottom: 15px;
+    line-height: 2.5rem;
 }
 
 .display-4 {
@@ -385,6 +417,15 @@ h6 {
 /* If the screen size is 500px wide or less, hide the element */
 
 @media only screen and (max-width: 995px) {
+    .headline {
+        font-size: 2.5rem;
+    }
+    .xl-padding {
+        padding: 6rem 2rem;
+    }
+    .lg-padding {
+        padding: 4rem 2rem;
+    }
 
     .nav-scroller {
         display: inline;
@@ -411,6 +452,12 @@ h6 {
 }
 
 @media only screen and (max-width: 420px) {
+    .xl-padding {
+        4rem 1.5rem;
+    }
+    .lg-padding {
+        padding: 3rem 1.5rem;
+    }
     .timeline {
         padding-left: 30px;
         padding-right: 30px;
@@ -418,12 +465,6 @@ h6 {
     }
     .featured-project {
         padding: 60px 15px 60px 15px;
-    }
-    .nav-logo {
-        display: none;
-    }
-    .nav-logo-small {
-        display: inline;
     }
     .btn-mobile-pad {
         margin-bottom: 10px;
