@@ -23,6 +23,8 @@ li{
     color: #343a40;
 }
 
+
+
 p a:hover {
     text-decoration: none;
 }
@@ -48,7 +50,7 @@ body {
 /* button updates */
 
 .btn {
-    border-radius: 0px;
+    font-family: 'Noto Serif', serif;
 }
 
 .bg-mobile {
