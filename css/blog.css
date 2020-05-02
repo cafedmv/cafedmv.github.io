@@ -79,6 +79,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.bg-pad {
+    padding-right: 3rem;
+}
+
 .btn-primary:hover {
     color: #333;
     background-color: #fec90b;
@@ -420,6 +424,13 @@ h3 {
 /* If the screen size is 500px wide or less, hide the element */
 
 @media only screen and (max-width: 995px) {
+    .bg-pad {
+    padding-right: 1rem;
+}
+        .mobile-pad {
+        margin-bottom: 2rem;
+    }
+    
     .headline {
         font-size: 2.5rem;
     }
@@ -471,6 +482,9 @@ h3 {
     }
     .btn-mobile-pad {
         margin-bottom: 1rem;
+    }
+    .bg-pad {
+        padding-right: 1rem;
     }
     .mobile-pad {
         margin-bottom: 2rem;
