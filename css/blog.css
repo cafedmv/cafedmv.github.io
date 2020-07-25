@@ -2,15 +2,15 @@
 
 a {
     color: #212758;
-    
+
 }
 
 p a {
     text-decoration: none;
     text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff,
-    0 0.05em 0 #fff, 0 -0.05em 0 #fff,
-    0.1em 0 0 #fff, -0.1em 0 0 #fff,
-    0 0.1em 0 #fff, 0 -0.1em 0 #fff;
+        0 0.05em 0 #fff, 0 -0.05em 0 #fff,
+        0.1em 0 0 #fff, -0.1em 0 0 #fff,
+        0 0.1em 0 #fff, 0 -0.1em 0 #fff;
     background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
     background-repeat: repeat-x;
     background-position: bottom 0.05em center;
@@ -18,7 +18,7 @@ p a {
 }
 
 p,
-li{
+li {
     font-family: 'Noto Serif', serif;
     color: #343a40;
 }
@@ -29,9 +29,7 @@ p a:hover {
     text-decoration: none;
 }
 
-.cust-nav-item {
-    padding-right: 5px;
-}
+.cust-nav-item {}
 
 .link-disabled {
     color: #d3d3d3;
@@ -42,9 +40,14 @@ p a:hover {
     padding: 10px;
 }
 
+.header {
+    padding: 16px 0px;
+}
+
 body {
     font-size: 1.1rem;
     line-height: 2rem;
+    font-family: 'Noto Serif', serif;
 }
 
 /* button updates */
@@ -67,11 +70,48 @@ body {
     background-size: contain;
 }
 
+.bg-blue {
+    background-color: #3e499e;
+}
+.darkmode h1, h2 {
+    color: white;
+}
+.darkmode p {
+    color: #e9eefc;
+}
+.darkmode a {
+    text-shadow: none;
+    color: #e9eefc;
+    font-weight: 700;
+}
+
+.our-team {
+    transform: rotate(270deg);
+    position: absolute;
+    margin-left: -320px;
+    margin-top: 180px;
+    text-align: right;
+    color: #e7e7e7;
+    font-size: 8rem;
+}
+
+.what-we-do {
+    transform: rotate(270deg);
+    position: absolute;
+    margin-left: -330px;
+    margin-top: 200px;
+    text-align: right;
+    color: #e7e7e7;
+    font-size: 6rem;
+}
+
+
+
 .btn-primary {
-    background-color: #3d489e;
+    background-color: #fec905;
     border: 0px;
     border-radius: 3rem;
-    color: #fff;
+    color: #222758 !important;
     font-weight: 700;
     transition: linear .1s;
     font-size: 1.2rem;
@@ -84,8 +124,8 @@ body {
 }
 
 .btn-primary:hover {
-    color: #333;
-    background-color: #fec90b;
+    color: #ffffff;
+    background-color: #f1585e;
 }
 
 .btn-text {
@@ -117,28 +157,29 @@ body {
 
 .btn-text-alt:hover {
     transition: all ease .1s;
-    border-bottom: dashed 5px #fec90b;
+    border-bottom: dashed 4px #f1585e;
     color: #222758;
 }
 
 .btn-text-nav-sub {
-    color: #222758;
-    font-weight: 500;
     transition: all ease .1s;
     font-family: montserrat;
+    padding: 36px 16px;
+    text-decoration: none !important;
 }
 
+
 .nav-sub-select {
-    border-bottom: 3px solid #222758;
-    color: #222758;
+    border-bottom: 4px solid #f1585e;
+    color: #3d489e;
     font-weight: 700;
     transition: all ease .1s;
     font-family: montserrat;
 }
 
 .btn-text-nav-sub:hover {
-    border-bottom: 3px solid #fec90b;
-    color: black;
+    border-bottom: 4px solid #f1585e;
+    color: #222758;
 }
 
 
@@ -153,23 +194,34 @@ body {
     margin-bottom: 30px;
 }
 
+.donate {
+    margin-left: 24px;
+}
+
 .nav-selected {
     color: #333;
     font-weight: 600;
 }
 
 .nav-logo {
-    max-width: 220px;
+    max-width: 180px;
 }
 
 .breadcrumbs {
-    padding-top: 15px;
+    padding: 8px 0px;
     font-size: 1rem;
+    background-color: #222758;
+    color: white;
+}
+
+.breadcrumbs a {
+    color: white;
+    text-decoration: underline;
 }
 
 #bgvideo {
     position: relative;
-    background-color: black;
+    background-color: #3d489e;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -201,8 +253,8 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: 0.7;
+    background-color: #3d489e;
+    opacity: 0.9;
     z-index: 1;
 }
 
@@ -213,7 +265,6 @@ body {
 }
 
 .timeline {
-    padding-top: 60px;
     padding-left: 30px;
     border-left: solid 1px #e7e7e7;
 }
@@ -226,7 +277,7 @@ body {
 
 /* stylelint-disable selector-list-comma-newline-after */
 .blog-heading {
-   margin-bottom: 60px;
+    margin-bottom: 60px;
     border-bottom: 1px solid #e7e7e7;
     padding-right: 100%;
 }
@@ -247,6 +298,11 @@ body {
 
 .headline {
     font-size: 3.5rem;
+}
+
+.headline-p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
 }
 
 .xl-padding {
@@ -303,8 +359,6 @@ h3 {
     display: flex;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: 10px;
     overflow-x: auto;
     text-align: center;
     white-space: nowrap;
@@ -411,7 +465,7 @@ h3 {
 .blog-footer {
     padding: 2.5rem 0;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #fff;
     border-top: .05rem solid #e5e5e5;
 }
 
@@ -424,19 +478,40 @@ h3 {
 /* If the screen size is 500px wide or less, hide the element */
 
 @media only screen and (max-width: 995px) {
-    .bg-pad {
-    padding-right: 1rem;
-}
-        .mobile-pad {
-        margin-bottom: 2rem;
+    .our-team {
+        left: -100vw;
+  position: absolute;
+    }
+    .what-we-do {
+        left: -100vw;
+  position: absolute;
     }
     
+    .header {
+    padding: 16px 0px 0px 0px;
+}
+    
+    .bg-pad {
+        padding-right: 1rem;
+    }
+
+    .mobile-pad {
+        margin-bottom: 2rem;
+    }
+
     .headline {
         font-size: 2.5rem;
     }
+    
+    .headline-p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
     .xl-padding {
         padding: 6rem 2rem;
     }
+
     .lg-padding {
         padding: 4rem 2rem;
     }
@@ -444,59 +519,79 @@ h3 {
     .nav-scroller {
         display: inline;
     }
+
     .cust-nav-item {
         display: none;
     }
+
     .bg-desktop-contact {
         background: none;
     }
+
     .bg-mobile-contact {
         display: inline;
     }
+
     .bg-desktop {
         background: none;
     }
+
     .bg-mobile {
         display: inline;
     }
-        .footer-padding {
+
+    .footer-padding {
         padding-bottom: 30px;
     }
-    
+    .btn-text-nav-sub {
+
+        transition: all ease .1s;
+        font-family: montserrat;
+        padding: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 420px) {
+
     .xl-padding {
-        4rem .5rem;
+        padding: 4rem 1rem;
     }
+
     .lg-padding {
-        padding: 2.5rem .5rem;
+        padding: 2.5rem 1rem;
     }
+
     .timeline {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 1rem ;
+        padding-right: 1rem;
         border-left: none;
     }
+
     .featured-project {
         padding: 60px 15px 60px 15px;
     }
+
     .btn-mobile-pad {
         margin-bottom: 1rem;
     }
+
     .bg-pad {
         padding-right: 1rem;
     }
+
     .mobile-pad {
         margin-bottom: 2rem;
     }
+
     .video-pad {
         margin-top: 30px;
     }
-    .nav-logo {
-        max-width: 150px;
-    }
+
+
+
     .breadcrumbs {
-    padding-top: 0px;
-    font-size: 1rem;
-}
+
+        font-size: 1rem;
+    }
 }

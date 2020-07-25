@@ -30,43 +30,45 @@
 
 <body>
 
-    <div class="container">
-        <header class="py-3">
+    <header class="header">
+        <div class="container">
             <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-4 pt-1">
+                <div class="col-4">
                     <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo"></a>
                 </div>
-                <div class="col-4 d-flex justify-content-end align-items-center">
-                    <div class="cust-nav-item"><a class="btn btn-text-nav-sub nav-sub-select" href="index.html">Home</a></div>
-                    <div class="cust-nav-item"><a class="btn btn-text-nav-sub" href="about-us.html">About</a></div>
-                    <div class="cust-nav-item"><a class="btn btn-text-nav-sub" href="our-projects.html">Projects</a></div>
-                    <div class="cust-nav-item"><a class="btn btn-text-nav-sub" href="contact-us.html">Contact Us</a></div>
-                    <a class="btn btn-primary font-weight-bold" href="donate.html">Donate</a>
+                <div class="col-8 d-flex justify-content-end align-items-center">
+                    <div class="cust-nav-item"><a class="btn-text-nav-sub nav-sub-select" href="index.html">Home</a></div>
+                    <div class="cust-nav-item"><a class="btn-text-nav-sub" href="about-us.html">About</a></div>
+                    <div class="cust-nav-item"><a class="btn-text-nav-sub" href="our-projects.html">Projects</a></div>
+                    <div class="cust-nav-item "><a class="btn-text-nav-sub" href="contact-us.html">Contact Us</a></div>
+                    <a class="btn btn-primary donate" href="donate.html">Donate</a>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+    <div class="container">
 
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex">
-                 <a class="btn btn-text-nav-sub nav-sub-select" href="index.html">Home</a>
-                <a class="btn btn-text-nav-sub" href="about-us.html">About</a>
-                <a class="btn btn-text-nav-sub" href="our-projects.html">Projects</a>
-                <a class="btn btn-text-nav-sub" href="contact-us.html">Contact Us</a>
+                <a class=" btn-text-nav-sub nav-sub-select" href="index.html">Home</a>
+                <a class=" btn-text-nav-sub" href="about-us.html">About</a>
+                <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
+                <a class=" btn-text-nav-sub" href="contact-us.html">Contact Us</a>
             </nav>
         </div>
-        
-        <div class="lg-padding">
-            <div class="container">
-                <div class="row">
-                <div class="col-xl-6 col-lg-7 col-md-7 mobile-pad bg-pad">
-                    <h1 class="headline">We're building healthier cities with art </h1>
-                    <p>From chalk murals to cultural festivals and everything inbetween- we use art to bring people together and rejuvenate communities.</p>
-                    <a class="btn btn-primary" href="donate.html" style="margin-top:1rem;">Help Fund Our Projects</a>
-                </div>
-                <div class="col-xl-6 col-lg-5 col-md-5">
-                    <img src="img/bg/bg-cafe-alt.png" style="width:100%;"/>
-                </div>
-                </div>
+    </div>
+    
+    <!-- video box -->
+    <div id="bgvideo">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="img/videos/projects.mp4" type="video/mp4">
+        </video>
+        <div class="xl-padding container darkmode">
+            <div class="col-lg-10 col-xl-8">
+                <h1 class="headline">We're building healthier communities with art </h1>
+                    <p class="headline-p">From chalk murals to cultural festivals and everything inbetween- we use art to bring people together and rejuvenate communities.</p>
+                    <a class="btn btn-primary headline-p" href="donate.html" style="margin-top:1rem;">Help Fund Our Projects</a>
             </div>
         </div>
     </div>
@@ -88,32 +90,33 @@
             </div>
     </div>
         
-    <div class="lg-padding">
-        <div class="container">
+        <div class="container timeline">
+        <div class="lg-padding">
+            <h2 class="what-we-do">WHAT WE DO</h2>
             <div class="col-lg-12">
                 <div class="row">
-                    <div class="col-lg-3 mobile-pad">
+                    <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
                         <img src="img/icons/how-desolate.png" style="max-width:300px;">
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-8 col-xl-7">
                         <h3>1. We fill in desolate spaces through public art projects</h3>
                         <p>We do public space design and renovation to make our communities look and feel brighter. This leads to creating a "walkable" city through art! From mural and street art to social movement events and programs, we're up to snuff on our gameplan.</p>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 60px;">
-                     <div class="offset-lg-1 col-lg-3 mobile-pad">
+                     <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
                         <img src="img/icons/how-educate.png" style="max-width:300px;">
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-8 col-xl-7">
                         <h3>2. We cultivate all our people through art education</h3>
                         <p>We host community workshops for all citizens, children's programs to introduce our youth to the beauty of art and more advanced sessions for seasoned artists, teachers and government employees. Basically, we've got something fun for everyone to enjoy!</p>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 60px;">
-                    <div class="offset-lg-2 col-lg-3 mobile-pad">
+                    <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
                         <img src="img/icons/how-exchange.png" style="max-width:300px;">
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-8 col-xl-7">
                         <h3>3. We make the world a little smaller through cultural exchange</h3>
                         <p>Here in the DMV we're blessed to have an entire world of diversity around us. We're all about showcasing the best in all of us through the community exchange of nationalities, race, gender and generations through art exhibitions, performances and festivals.</p>
                     </div>
