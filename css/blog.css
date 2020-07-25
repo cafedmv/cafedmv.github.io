@@ -547,7 +547,7 @@ h3 {
 
         transition: all ease .1s;
         font-family: montserrat;
-        padding: 1rem;
+        padding: 1rem .7rem;
     }
 
 }
@@ -559,7 +559,7 @@ h3 {
     }
 
     .lg-padding {
-        padding: 2.5rem 1rem;
+        padding: 4rem 1rem;
     }
 
     .timeline {
@@ -581,7 +581,7 @@ h3 {
     }
 
     .mobile-pad {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     .video-pad {
