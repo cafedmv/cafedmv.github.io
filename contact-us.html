@@ -19,7 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="css/blog.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853964-1"></script>
@@ -36,105 +35,107 @@
 </head>
 
 <body>
-
+    <a class="skip-main" href="#main">Skip to main content</a>
     <header class="header">
         <div class="container">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4">
-                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo"></a>
+                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo" alt="CAFE Logo"></a>
                 </div>
-                <div class="col-8 d-flex justify-content-end align-items-center">
+                <nav aria-label="primary" class="col-8 d-flex justify-content-end align-items-center">
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="index.html">Home</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="about-us.html">About</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="our-projects.html">Projects</a></div>
                     <div class="cust-nav-item "><a class="btn-text-nav-sub nav-sub-select" href="contact-us.html">Contact Us</a></div>
                     <a class="btn btn-primary donate" href="donate.html">Donate</a>
-                </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav-scroller py-1 mb-2">
+                <nav class="nav d-flex" aria-label="primary">
+                    <a class=" btn-text-nav-sub" href="index.html">Home</a>
+                    <a class=" btn-text-nav-sub" href="about-us.html">About</a>
+                    <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
+                    <a class=" btn-text-nav-sub nav-sub-select" href="contact-us.html">Contact Us</a>
+                </nav>
             </div>
         </div>
     </header>
-    <div class="container">
 
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex">
-                <a class=" btn-text-nav-sub" href="index.html">Home</a>
-                <a class=" btn-text-nav-sub" href="about-us.html">About</a>
-                <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
-                <a class=" btn-text-nav-sub nav-sub-select" href="contact-us.html">Contact Us</a>
-            </nav>
-        </div>
-    </div>
-    <div class="bg-blue">
-        <div class="container">
-
-            <div class="xl-padding">
-                <div class="container darkmode">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-7 bg-pad mobile-pad">
-                            <h1 class="headline">Contact Us</h1>
-                            <p class="headline-p">It's our community, so we want to hear from everyone- including you. You can expect a response within 2 days.</p>
-                            <p class="headline-p"><a href="mailto:cafedmv@gmail.com"><i class="fas fa-envelope-open-text"></i> Email us</a> at cafedmv@gmail.com</p>
-                        </div>
-                        <div class="col-xl-6 col-lg-5 col-md-5">
-                            <img src="img/icons/contact.png" style="width:100%;" />
+    <main id="main" role="main">
+        <div class="bg-blue">
+            <div class="container">
+                <div class="xl-padding">
+                    <div class="container darkmode">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-7 bg-pad mobile-pad">
+                                <h1 class="headline">Contact Us</h1>
+                                <p class="headline-p">It's our community, so we want to hear from everyone- including you. You can expect a response within 2 days.</p>
+                                <p class="headline-p"><a href="mailto:cafedmv@gmail.com"><i class="fas fa-envelope-open-text"></i> Email us</a> at cafedmv@gmail.com</p>
+                            </div>
+                            <div class="col-xl-6 col-lg-5 col-md-5">
+                                <img src="img/icons/contact.png" style="width:100%;" alt="Community Art for Everyone business cards featuring colorful bricks decorating the corners."/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="gov-and-companies" class="bg-light lg-padding ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <h2>Local Governments</h2>
-                    <p>Want to bring community art to your people? <b>Fill out our application form (5 minutes) to commission a project. We'll get back to you with an estimated quote within a week.</b> All profits made will go directly to funding future local community art projects!</p>
-                    <p> If you need more details, email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScFRuzQH3SmuRKIvRN3IlYWg002q_K6p0FY8y1dlE7hi02zEQ/viewform?usp=sf_link" class="btn btn-primary" style="margin-top:1rem;">Commission a Project</a>
+        <div id="gov-and-companies" class="bg-light lg-padding ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h2>Local Governments</h2>
+                        <p>Want to bring community art to your people? <b>Fill out our application form (5 minutes) to commission a project. We'll get back to you with an estimated quote within a week.</b> All profits made will go directly to funding future local community art projects!</p>
+                        <p> If you need more details, email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScFRuzQH3SmuRKIvRN3IlYWg002q_K6p0FY8y1dlE7hi02zEQ/viewform?usp=sf_link" class="btn btn-primary" style="margin-top:1rem;">Commission a Project</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="volunteer">
-        <div class="container timeline">
-            <div class="lg-padding">
-            <div class="row">
-                <div class="col-lg-6 col-md-8 bg-pad mobile-pad">
-                    <h2>Volunteer</h2>
-                    <p>We need your help to brighten our community. We're looking for energy, passion and a love for bringing life and art to local communities.</p>
-                    <p> In return? You'll share smiles, build up communities, discover a new creative outlet, and meet friends to last a lifetime.</p>
-                    <p>We're currently looking for:</p>
-                    <ul>
-                        <li><b>Event volunteers</b> to help facilitate workshops, teach children, or set up/take down props.</li>
-                        <li><b>Social media gurus</b> who know how to share and hashtag like an influencer. The more awareness we can get, the more support we'll receive to do what we do best.</li>
-                        <li><b>Artists and creatives</b> to lead workshops, ideate projects, or just create awesome art on public canvases for the community.</li>
-                    </ul>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link" style="margin-top:1rem;" class="btn btn-primary btn-mobile-pad">Become a Volunteer</a>
+        <div id="volunteer">
+            <div class="container timeline">
+                <div class="lg-padding">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8 bg-pad mobile-pad">
+                            <h2>Volunteer</h2>
+                            <p>We need your help to brighten our community. We're looking for energy, passion and a love for bringing life and art to local communities.</p>
+                            <p> In return? You'll share smiles, build up communities, discover a new creative outlet, and meet friends to last a lifetime.</p>
+                            <p>We're currently looking for:</p>
+                            <ul>
+                                <li><b>Event volunteers</b> to help facilitate workshops, teach children, or set up/take down props.</li>
+                                <li><b>Social media gurus</b> who know how to share and hashtag like an influencer. The more awareness we can get, the more support we'll receive to do what we do best.</li>
+                                <li><b>Artists and creatives</b> to lead workshops, ideate projects, or just create awesome art on public canvases for the community.</li>
+                            </ul>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link" style="margin-top:1rem;" class="btn btn-primary btn-mobile-pad">Become a Volunteer</a>
+                        </div>
+                        <div class="col-lg-6 col-md-4">
+                            <img src="img/icons/volunteers-2.png" style="width:100%;" alt="Two volunteers organizing a table full of artistic pamphlets."/>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-4">
-                    <img src="img/icons/volunteers-2.png" style="width:100%;" />
-                </div>
-            </div>
             </div>
         </div>
-    </div>
 
-    <!-- /.container -->
+        <!-- /.container -->
+    </main>
 
     <footer class="blog-footer">
+        <h2 class="off-screen">Footer</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-padding">
-                    <h5>About CAFE</h5>
+                    <h3 class="f-h5">About CAFE</h3>
                     <p>Community Art for Everyone is a registered 501(c)(3) non-profit in the United States.</p>
                     <p><i class="fas fa-envelope-open-text"></i> Email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
                 </div>
                 <div class="col-md-4 footer-padding">
-                    <h5>Volunteer with Us</h5>
+                    <h3 class="f-h5">Volunteer with Us</h3>
                     <p><i class="fas fa-clipboard"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link">Sign up to become a volunteer</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Connect with Us</h5>
+                    <h3 class="f-h5">Connect with Us</h3>
                     <p><i class="fab fa-meetup"></i> <a href="https://www.meetup.com/Community-Art/">Join us on MeetUp</a><br /><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/cafedmv/">Follow us on Facebook</a></p>
                 </div>
             </div>
@@ -157,6 +158,22 @@
             fg: '#eceeef',
             text: 'Thumbnail'
         });
+    </script>
+
+    <!--Turn off motion if user prefers it -->
+    <script>
+        var motionQuery = matchMedia('(prefers-reduced-motion)');
+        var v = document.querySelector('video');
+
+        function reducedMotionCheck() {
+            if (motionQuery.matches) {
+                v.pause();
+            } else {
+                v.play();
+            }
+        }
+        reducedMotionCheck();
+        motionQuery.addListener(reducedMotionCheck);
     </script>
 </body>
 

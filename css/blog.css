@@ -85,6 +85,11 @@ body {
     font-weight: 700;
 }
 
+.off-screen {
+  left: -100vw;
+  position: absolute;
+}
+
 .our-team {
     transform: rotate(270deg);
     position: absolute;
@@ -124,8 +129,8 @@ body {
 }
 
 .btn-primary:hover {
-    color: #ffffff;
-    background-color: #f1585e;
+    color: #fff !important;
+    background-color: #222758;
 }
 
 .btn-text {
@@ -265,7 +270,7 @@ body {
 }
 
 .timeline {
-    padding-left: 30px;
+    padding-left: 2rem;
     border-left: solid 1px #e7e7e7;
 }
 
@@ -335,6 +340,11 @@ h3 {
     line-height: 2.5rem;
 }
 
+.f-h5 {
+    font-size: 1.25rem;
+    margin-bottom: .25rem;
+}
+
 .display-4 {
     font-size: 2.5rem;
 }
@@ -343,6 +353,32 @@ h3 {
     .display-4 {
         font-size: 3rem;
     }
+}
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#3d489e;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid #fec905;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
 }
 
 .nav-scroller {
@@ -463,7 +499,7 @@ h3 {
  */
 
 .blog-footer {
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
     color: #333;
     background-color: #fff;
     border-top: .05rem solid #e5e5e5;
@@ -471,6 +507,18 @@ h3 {
 
 .blog-footer p:last-child {
     margin-bottom: 0;
+}
+
+.mb {
+    margin-bottom: 2rem;
+}
+
+.mu {
+    margin-top: 2rem;
+}
+
+.mu-2 {
+    margin-top: 4rem;
 }
 
 /* media queries */
@@ -509,11 +557,11 @@ h3 {
     }
 
     .xl-padding {
-        padding: 6rem 2rem;
+        padding: 6rem 0rem;
     }
 
     .lg-padding {
-        padding: 4rem 2rem;
+        padding: 4rem 0rem;
     }
 
     .nav-scroller {
@@ -552,7 +600,7 @@ h3 {
 
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 640px) {
 
     .xl-padding {
         padding: 4rem 1rem;
@@ -563,8 +611,7 @@ h3 {
     }
 
     .timeline {
-        padding-left: 1rem ;
-        padding-right: 1rem;
+        padding: 0rem 1rem;
         border-left: none;
     }
 

@@ -20,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="css/blog.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853964-1"></script>
@@ -37,127 +36,131 @@
 </head>
 
 <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
     <header class="header">
         <div class="container">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4">
-                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo"></a>
+                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo" alt="CAFE Logo"></a>
                 </div>
-                <div class="col-8 d-flex justify-content-end align-items-center">
+                <nav class="col-8 d-flex justify-content-end align-items-center" aria-label="primary">
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="index.html">Home</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub nav-sub-select" href="about-us.html">About</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="our-projects.html">Projects</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="contact-us.html">Contact Us</a></div>
                     <a class="btn btn-primary donate" href="donate.html">Donate</a>
-                </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav-scroller py-1 mb-2">
+                <nav class="nav d-flex" aria-label="primary">
+                    <a class=" btn-text-nav-sub" href="index.html">Home</a>
+                    <a class=" btn-text-nav-sub nav-sub-select" href="about-us.html">About</a>
+                    <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
+                    <a class=" btn-text-nav-sub" href="contact-us.html">Contact Us</a>
+                </nav>
             </div>
         </div>
     </header>
-    <div class="container">
 
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex">
-                <a class=" btn-text-nav-sub" href="index.html">Home</a>
-                <a class=" btn-text-nav-sub nav-sub-select" href="about-us.html">About</a>
-                <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
-                <a class=" btn-text-nav-sub" href="contact-us.html">Contact Us</a>
-            </nav>
-        </div>
-    </div>
-
-    <!-- video box -->
-    <div id="bgvideo">
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="img/videos/risingmoon.mp4" type="video/mp4">
-        </video>
-        <div class="xl-padding container darkmode">
-            <div class="col-lg-10 col-xl-8">
-                <h1 class="headline">About Us</h1>
-                <p class="headline-p">Community Art For Everyone (or “CAFE” for short) is all about empowering our local neighborhoods to express themselves in new and creative ways. We work closely with local government, companies and neighborhoods in the the DC Metro area.</p>
-            </div>
-        </div>
-    </div>
-    <!-- /.container -->
-
-    <div id="community-art" class="bg-light lg-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 bg-pad mobile-pad">
-                    <h1>Why We Serve</h1>
-                    <p>We handle the complicated stuff, like gathering the paint buckets and paperwork, so our communities can jump right onto the canvas. To us, there’s nothing more fun and rewarding than enabling our neighbors to express themselves in new and fun ways.</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link" style="margin-top:1rem;" class="btn btn-primary btn-mobile-pad">Become a Volunteer</a>
-
-                </div>
-                <div class="col-md-8 col-lg-6">
-                    <img src="img/icons/volunteers.png" style="width:100%;" />
+    <main role="main" id="main">
+        <!-- video box -->
+        <div id="bgvideo">
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="img/videos/risingmoon.mp4" type="video/mp4">
+            </video>
+            <div class="xl-padding container darkmode">
+                <div class="col-lg-10 col-xl-8">
+                    <h1 class="headline">About Us</h1>
+                    <p class="headline-p">Community Art For Everyone (or “CAFE” for short) is all about empowering our local neighborhoods to express themselves in new and creative ways. We work closely with local government, companies and neighborhoods in the the DC Metro area.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /.container -->
+        <!-- /.container -->
+
+        <div id="community-art" class="bg-light lg-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 bg-pad mobile-pad">
+                        <h1>Why We Serve</h1>
+                        <p>We handle the complicated stuff, like gathering the paint buckets and paperwork, so our communities can jump right onto the canvas. To us, there’s nothing more fun and rewarding than enabling our neighbors to express themselves in new and fun ways.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link" style="margin-top:1rem;" class="btn btn-primary btn-mobile-pad">Become a Volunteer</a>
+
+                    </div>
+                    <div class="col-md-8 col-lg-6">
+                        <img src="img/icons/volunteers.png" style="width:100%;" alt="A group of CAFE volunteers posing in front of a chalk-art wall."/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
 
         <div class="container timeline">
             <div class="lg-padding">
-                <h2 class="our-team">OUR TEAM</h2>
-            <!-- Hannah -->
-            <div class="row justify-content-center" style="margin-top:30px;">
-                <div class="col-lg-4 col-md-8">
-                    <img src="img/icons/hannah.png" style="width:100%;"><br /><br />
+                <h2 class="off-screen">Our Team</h2>
+                <h2 role="presentation" class="our-team">OUR TEAM</h2>
+                <!-- Hannah -->
+                <div class="row justify-content-center mu">
+                    <div class="col-lg-4 col-md-8 mb">
+                        <img src="img/icons/hannah.png" style="width:100%;" alt="A smiling Korean woman wearing a CAFE branded apron.">
+                    </div>
+                    <div class="col-lg-7">
+                        <h3>Hannah Joo</h3>
+                        <p>Hannah has a BA in Fine Arts and an MA in Museum Studies from Kookmin University. She is also a PhD candidate in Urban Planning at Hanyang University.</p>
+                        <p>From curating art exhibitions for the Gail Art Museum to organizing successful exhibitions and festivals for youth, the disabled community, schools, and more; she has found a greater calling in the service of others.</p>
+                        <p>As an educator, Hannah has also developed learning programs in the field of art exhibitions and community art. She has lectured professionally to public school teachers, school workers, and government officers.</p>
+                        <p>After moving to Virginia in 2015, Hannah worked as the director of the Korean Heritage Foundation for over three years. She organized a diverse portfolio of projects related to Korean culture from traditional performances to cultural identity camps for Korean-American students and more. </p>
+                        <p>Hannah believes that the combination of city, humanity, and the arts can bring a lasting impact to the DMV community. Her vision is to use art as a medium to transform our communities to be more healthy, safe, and beautiful for everyone.</p>
+                    </div>
                 </div>
-                <div class="col-lg-7">
-                    <h3>Hannah Joo</h3>
-                    <p>Hannah has a BA in Fine Arts and an MA in Museum Studies from Kookmin University. She is also a PhD candidate in Urban Planning at Hanyang University.</p>
-                    <p>From curating art exhibitions for the Gail Art Museum to organizing successful exhibitions and festivals for youth, the disabled community, schools, and more; she has found a greater calling in the service of others.</p>
-                    <p>As an educator, Hannah has also developed learning programs in the field of art exhibitions and community art. She has lectured professionally to public school teachers, school workers, and government officers.</p>
-                    <p>After moving to Virginia in 2015, Hannah worked as the director of the Korean Heritage Foundation for over three years. She organized a diverse portfolio of projects related to Korean culture from traditional performances to cultural identity camps for Korean-American students and more. </p>
-                    <p>Hannah believes that the combination of city, humanity, and the arts can bring a lasting impact to the DMV community. Her vision is to use art as a medium to transform our communities to be more healthy, safe, and beautiful for everyone.</p>
-                </div>
-            </div>
 
-            <!-- Josh -->
-            <div class="row justify-content-center" style="margin-top:60px;">
-                <div class="col-lg-4 col-md-8">
-                    <img src="img/icons/josh.png" style="width:100%;"><br /><br />
+                <!-- Josh -->
+                <div class="row justify-content-center mu-2">
+                    <div class="col-lg-4 col-md-8 mb">
+                        <img src="img/icons/josh.png" style="width:100%;" alt="A smiling Korean American man holding a plastic donut.">
+                    </div>
+                    <div class="col-lg-7">
+                        <h3>Josh Kim</h3>
+                        <p>Josh is a professional UX Designer in the DC Metro area. He believes that experiences should be designed so that they can be accessible to everyone- regardless of age, ability, gender, or culture. Josh hopes CAFE can help democratize design thinking to less privileged communities and empower children to learn how to be creative.</p>
+                        <p>Josh helps CAFE with event planning, marketing, and website maintenance. Outside of his time volunteering, he enjoys studying design theory and social justice.</p>
+                    </div>
                 </div>
-                <div class="col-lg-7">
-                    <h3>Josh Kim</h3>
-                    <p>Josh is a professional UX Designer in the DC Metro area. He believes that experiences should be designed so that they can be accessible to everyone- regardless of age, ability, gender, or culture. Josh hopes CAFE can help democratize design thinking to less privileged communities and empower children to learn how to be creative.</p>
-                    <p>Josh helps CAFE with event planning, marketing, and website maintenance. Outside of his time volunteering, he enjoys studying design theory and social justice.</p>
-                </div>
-            </div>
 
-            <!-- Harim -->
-            <div class="row justify-content-center" style="margin-top:60px;">
-                <div class="col-lg-4 col-md-8">
-                    <img src="img/icons/harim.png" style="width:100%;"><br /><br />
-                </div>
-                <div class="col-lg-7">
-                    <h3>Harim Kwon</h3>
-                    <p>Harim is a language scientist by training and an artist by heart. Her long time hobby has been to create beautiful but useless things. </p>
-                    <p>Since joining CAFE, she is now creating beautiful things that are actually useful, that help her neighborhood and local communities. The beautiful and useful things that CAFE brought to the community with her include the public piano at the Annandale Pop-up park, Rising Moon—Dance Performance, and the Talk Concert: the Korean Lady Next Door. She believes these creations have made the world that she lives in a little better at a time. </p>
-                    <p>Thanks to CAFE, she now is a firm believer in the power of beautiful things. She is excited to create more with CAFE.</p>
+                <!-- Harim -->
+                <div class="row justify-content-center mu-2">
+                    <div class="col-lg-4 col-md-8 mb">
+                        <img src="img/icons/harim.png" style="width:100%;" alt="A smiling Korean woman wearing a red beanie and a black parka.">
+                    </div>
+                    <div class="col-lg-7">
+                        <h3>Harim Kwon</h3>
+                        <p>Harim is a language scientist by training and an artist by heart. Her long time hobby has been to create beautiful but useless things. </p>
+                        <p>Since joining CAFE, she is now creating beautiful things that are actually useful, that help her neighborhood and local communities. The beautiful and useful things that CAFE brought to the community with her include the public piano at the Annandale Pop-up park, Rising Moon—Dance Performance, and the Talk Concert: the Korean Lady Next Door. She believes these creations have made the world that she lives in a little better at a time. </p>
+                        <p>Thanks to CAFE, she now is a firm believer in the power of beautiful things. She is excited to create more with CAFE.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <!-- /.container -->
+
+        <!-- /.container -->
+    </main>
 
     <footer class="blog-footer">
+        <h2 class="off-screen">Footer</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-padding">
-                    <h5>About CAFE</h5>
+                    <h3 class="f-h5">About CAFE</h3>
                     <p>Community Art for Everyone is a registered 501(c)(3) non-profit in the United States.</p>
                     <p><i class="fas fa-envelope-open-text"></i> Email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
                 </div>
                 <div class="col-md-4 footer-padding">
-                    <h5>Volunteer with Us</h5>
+                    <h3 class="f-h5">Volunteer with Us</h3>
                     <p><i class="fas fa-clipboard"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link">Sign up to become a volunteer</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Connect with Us</h5>
+                    <h3 class="f-h5">Connect with Us</h3>
                     <p><i class="fab fa-meetup"></i> <a href="https://www.meetup.com/Community-Art/">Join us on MeetUp</a><br /><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/cafedmv/">Follow us on Facebook</a></p>
                 </div>
             </div>
@@ -174,12 +177,21 @@
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
+
+    <!--Turn off motion if user prefers it -->
     <script>
-        Holder.addTheme('thumb', {
-            bg: '#55595c',
-            fg: '#eceeef',
-            text: 'Thumbnail'
-        });
+        var motionQuery = matchMedia('(prefers-reduced-motion)');
+        var v = document.querySelector('video');
+
+        function reducedMotionCheck() {
+            if (motionQuery.matches) {
+                v.pause();
+            } else {
+                v.play();
+            }
+        }
+        reducedMotionCheck();
+        motionQuery.addListener(reducedMotionCheck);
     </script>
 </body>
 

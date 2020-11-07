@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,65 +17,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="css/blog.css" rel="stylesheet">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853964-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-140853964-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853964-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140853964-1');
+    </script>
 </head>
 
 <body>
-
+    <a class="skip-main" href="#main">Skip to main content</a>
     <header class="header">
+        <!--Desktop nav-->
         <div class="container">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4">
-                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo"></a>
+                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo" alt="CAFE Logo"></a>
                 </div>
-                <div class="col-8 d-flex justify-content-end align-items-center">
+                <nav class="col-8 d-flex justify-content-end align-items-center" aria-label="primary">
                     <div class="cust-nav-item"><a class="btn-text-nav-sub nav-sub-select" href="index.html">Home</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="about-us.html">About</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="our-projects.html">Projects</a></div>
                     <div class="cust-nav-item "><a class="btn-text-nav-sub" href="contact-us.html">Contact Us</a></div>
                     <a class="btn btn-primary donate" href="donate.html">Donate</a>
-                </div>
+                </nav>
+            </div>
+        </div>
+        <!--Mobile nav-->
+        <div class="container">
+            <div class="nav-scroller py-1 mb-2">
+                <nav class="nav d-flex" aria-label="primary">
+                    <a class=" btn-text-nav-sub nav-sub-select" href="index.html">Home</a>
+                    <a class=" btn-text-nav-sub" href="about-us.html">About</a>
+                    <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
+                    <a class=" btn-text-nav-sub" href="contact-us.html">Contact Us</a>
+                </nav>
             </div>
         </div>
     </header>
-    <div class="container">
 
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex">
-                <a class=" btn-text-nav-sub nav-sub-select" href="index.html">Home</a>
-                <a class=" btn-text-nav-sub" href="about-us.html">About</a>
-                <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
-                <a class=" btn-text-nav-sub" href="contact-us.html">Contact Us</a>
-            </nav>
-        </div>
-    </div>
-    
-    <!-- video box -->
-    <div id="bgvideo">
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="img/videos/projects.mp4" type="video/mp4">
-        </video>
-        <div class="xl-padding container darkmode">
-            <div class="col-lg-10 col-xl-8">
-                <h1 class="headline">We're building healthier communities with art </h1>
+    <main role="main" id="main">
+        <!-- video box -->
+        <div id="bgvideo">
+            <div class="overlay"></div>
+            <video role="presentation" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="img/videos/projects.mp4" type="video/mp4">
+            </video>
+            <div class="xl-padding container darkmode">
+                <div class="col-lg-10 col-xl-8">
+                    <h1 class="headline">We're building healthier communities with art </h1>
                     <p class="headline-p">From chalk murals to cultural festivals and everything inbetween- we use art to bring people together and rejuvenate communities.</p>
                     <a class="btn btn-primary headline-p" href="donate.html" style="margin-top:1rem;">Help Fund Our Projects</a>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div id="how-we-impact" class="bg-light lg-padding">
-        <div class="container">
+
+        <div id="how-we-impact" class="bg-light lg-padding">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 mobile-pad">
                         <h2>Our Mission</h2>
@@ -88,62 +94,62 @@
                     </div>
                 </div>
             </div>
-    </div>
-        
+        </div>
+
         <div class="container timeline">
-        <div class="lg-padding">
-            <h2 class="what-we-do">WHAT WE DO</h2>
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
-                        <img src="img/icons/how-desolate.png" style="max-width:300px;">
+            <div class="lg-padding">
+                <h2 class="off-screen">What We Do</h2>
+                <h2 role="presentation" class="what-we-do">WHAT WE DO</h2>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
+                            <img src="img/icons/how-desolate.png" style="max-width:300px;" alt="">
+                        </div>
+                        <div class="col-lg-8 col-xl-7">
+                            <h3>1. We fill in desolate spaces through public art projects</h3>
+                            <p>We do public space design and renovation to make our communities look and feel brighter. This leads to creating a "walkable" city through art! From mural and street art to social movement events and programs, we're up to snuff on our gameplan.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-8 col-xl-7">
-                        <h3>1. We fill in desolate spaces through public art projects</h3>
-                        <p>We do public space design and renovation to make our communities look and feel brighter. This leads to creating a "walkable" city through art! From mural and street art to social movement events and programs, we're up to snuff on our gameplan.</p>
+                    <div class="row" style="margin-top: 60px;">
+                        <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
+                            <img src="img/icons/how-educate.png" style="max-width:300px;" alt="">
+                        </div>
+                        <div class="col-lg-8 col-xl-7">
+                            <h3>2. We cultivate all our people through art education</h3>
+                            <p>We host community workshops for all citizens, children's programs to introduce our youth to the beauty of art and more advanced sessions for seasoned artists, teachers and government employees. Basically, we've got something fun for everyone to enjoy!</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row" style="margin-top: 60px;">
-                     <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
-                        <img src="img/icons/how-educate.png" style="max-width:300px;">
-                    </div>
-                    <div class="col-lg-8 col-xl-7">
-                        <h3>2. We cultivate all our people through art education</h3>
-                        <p>We host community workshops for all citizens, children's programs to introduce our youth to the beauty of art and more advanced sessions for seasoned artists, teachers and government employees. Basically, we've got something fun for everyone to enjoy!</p>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 60px;">
-                    <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
-                        <img src="img/icons/how-exchange.png" style="max-width:300px;">
-                    </div>
-                    <div class="col-lg-8 col-xl-7">
-                        <h3>3. We make the world a little smaller through cultural exchange</h3>
-                        <p>Here in the DMV we're blessed to have an entire world of diversity around us. We're all about showcasing the best in all of us through the community exchange of nationalities, race, gender and generations through art exhibitions, performances and festivals.</p>
+                    <div class="row" style="margin-top: 60px;">
+                        <div class="offset-xl-1 col-lg-4 col-xl-3 mobile-pad">
+                            <img src="img/icons/how-exchange.png" style="max-width:300px;" alt="">
+                        </div>
+                        <div class="col-lg-8 col-xl-7">
+                            <h3>3. We make the world a little smaller through cultural exchange</h3>
+                            <p>Here in the DMV we're blessed to have an entire world of diversity around us. We're all about showcasing the best in all of us through the community exchange of nationalities, race, gender and generations through art exhibitions, performances and festivals.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /.container -->
-
-
-    
+        <!-- /.container -->
+    </main>
 
     <footer class="blog-footer">
+        <h2 class="off-screen">Footer</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-padding">
-                    <h5>About CAFE</h5>
+                    <h3 class="f-h5">About CAFE</h3>
                     <p>Community Art for Everyone is a registered 501(c)(3) non-profit in the United States.</p>
                     <p><i class="fas fa-envelope-open-text"></i> Email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
                 </div>
                 <div class="col-md-4 footer-padding">
-                    <h5>Volunteer with Us</h5>
+                    <h3 class="f-h5">Volunteer with Us</h3>
                     <p><i class="fas fa-clipboard"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link">Sign up to become a volunteer</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Connect with Us</h5>
-                    <p><i class="fab fa-meetup"></i> <a href="https://www.meetup.com/Community-Art/">Join us on MeetUp</a><br/><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/cafedmv/">Follow us on Facebook</a></p>
+                    <h3 class="f-h5">Connect with Us</h3>
+                    <p><i class="fab fa-meetup"></i> <a href="https://www.meetup.com/Community-Art/">Join us on MeetUp</a><br /><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/cafedmv/">Follow us on Facebook</a></p>
                 </div>
             </div>
         </div>
@@ -165,6 +171,21 @@
             fg: '#eceeef',
             text: 'Thumbnail'
         });
+    </script>
+    
+    <!--Turn off motion if user prefers it -->
+    <script>
+        var motionQuery = matchMedia('(prefers-reduced-motion)');
+        var v = document.querySelector('video');
+        function reducedMotionCheck() {
+            if (motionQuery.matches) {
+                v.pause();
+            } else {
+                v.play();
+            }
+        }
+        reducedMotionCheck(); 
+        motionQuery.addListener(reducedMotionCheck); 
     </script>
 </body>
 

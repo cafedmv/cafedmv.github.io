@@ -10,7 +10,7 @@
 
     <title>Donate | Community Art For Everyone (CAFEDMV), a non-profit with a mission to bring free art projects and events to Northern Virginia, Maryland, and DC communities</title>
 
-    
+
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,106 +20,112 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="css/blog.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853964-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-140853964-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140853964-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140853964-1');
+    </script>
 </head>
 
 <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
     <header class="header">
         <div class="container">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4">
-                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo"></a>
+                    <a class="blog-header-logo text-dark" href="index.html"><img src="img/logos/CAFEDC.png" class="nav-logo" alt="CAFE Logo"></a>
                 </div>
-                <div class="col-8 d-flex justify-content-end align-items-center">
+                <nav aria-label="primary" class="col-8 d-flex justify-content-end align-items-center">
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="index.html">Home</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="about-us.html">About</a></div>
                     <div class="cust-nav-item"><a class="btn-text-nav-sub" href="our-projects.html">Projects</a></div>
                     <div class="cust-nav-item "><a class="btn-text-nav-sub " href="contact-us.html">Contact Us</a></div>
                     <a class="btn btn-primary donate" href="donate.html">Donate</a>
-                </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav-scroller py-1 mb-2">
+                <nav aria-label="primary" class="nav d-flex">
+                    <a class=" btn-text-nav-sub" href="index.html">Home</a>
+                    <a class=" btn-text-nav-sub" href="about-us.html">About</a>
+                    <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
+                    <a class=" btn-text-nav-sub " href="contact-us.html">Contact Us</a>
+                </nav>
             </div>
         </div>
     </header>
-    <div class="container">
 
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex">
-                <a class=" btn-text-nav-sub" href="index.html">Home</a>
-                <a class=" btn-text-nav-sub" href="about-us.html">About</a>
-                <a class=" btn-text-nav-sub" href="our-projects.html">Projects</a>
-                <a class=" btn-text-nav-sub " href="contact-us.html">Contact Us</a>
-            </nav>
-        </div>
-    </div>
-    <div class="bg-light lg-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Help Us Do More</h1>
-                    <p>We're a nonprofit that relies on support from people like you. <b>Even just $10 can go a long way to bring art and creativity to our local communities.</b></p>
-                </div>
-                <div class="col-md-5 offset-md-1">
-                    <h3 id="impact-title">Become a Donor</h3>
-                    <p id="impact">Give a child her first art lesson through a community art workshop in the DMV. Art supplies don't cost much, but they go a long way with our youth. Help us empower our children!</p>
-                    <div id="donate" class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-primary active">
-                            <input type="radio" name="options" autocomplete="off" checked value="10"> $10</label>
-                        <label class="btn btn-outline-primary">
-                            <input type="radio" name="options" value="30" id="option30" autocomplete="off"> $30
-                        </label>
-                        <label class="btn btn-outline-primary">
-                            <input type="radio" name="options" value="50" autocomplete="off"> $50</label>
-                        <label class="btn btn-outline-primary">
-                            <input type="radio" name="options" value="0" autocomplete="off"> Other</label>
+    <main id="main" role="main">
+        <div class="bg-light lg-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h1>Help Us Do More</h1>
+                        <p>We're a nonprofit that relies on support from people like you. <b>Even just $10 can go a long way to bring art and creativity to our local communities.</b></p>
                     </div>
-                    <br/><br/>
-                    <a id="paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=22XGHRXPCW4GW&source=url" class="btn btn-primary font-weight-bold">Give with Paypal</a>
-                    <br/>
+                    <div class="col-md-5 offset-md-1">
+                        <h3 id="impact-title">Become a Donor</h3>
+                        <p id="impact">Give a child her first art lesson through a community art workshop in the DMV. Art supplies don't cost much, but they go a long way with our youth. Help us empower our children!</p>
+                        <div id="donate" class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-primary active">
+                                <input type="radio" name="options" autocomplete="off" checked value="10"> $10</label>
+                            <label class="btn btn-outline-primary">
+                                <input type="radio" name="options" value="30" id="option30" autocomplete="off"> $30
+                            </label>
+                            <label class="btn btn-outline-primary">
+                                <input type="radio" name="options" value="50" autocomplete="off"> $50</label>
+                            <label class="btn btn-outline-primary">
+                                <input type="radio" name="options" value="0" autocomplete="off"> Other</label>
+                        </div>
+                        <button id="paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=22XGHRXPCW4GW&source=url" class="btn btn-primary font-weight-bold mu">Give with Paypal</button>
+                        <br />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /.container -->
-    
+        <!-- /.container -->
+
         <div class="container timeline">
             <div class="lg-padding">
-            <div class="row p-2">
-                <div class="col-lg-5 bg-pad mobile-pad">
-                    <h2>Give the gift of a better community</h2>
-                    <p>Community Art for Everyone is a registered 501(c)(3) non-profit in the United States, and all gifts to us are tax deductible in the United States to the fullest extent allowed by law. Our Tax ID number is 83-3578993.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/icons/child.png" style="width:100%;"/>
+                <div class="row p-2">
+                    <div class="col-lg-5 bg-pad mobile-pad">
+                        <h2>Give the gift of a better community</h2>
+                        <p>Community Art for Everyone is a registered 501(c)(3) non-profit in the United States, and all gifts to us are tax deductible in the United States to the fullest extent allowed by law. Our Tax ID number is 83-3578993.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/icons/child.png" style="width:100%;" alt="A smiling Korean American child standing in a brightly lit park in Annandale."/>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /.container -->
+        <!-- /.container -->
+    </main>
 
     <footer class="blog-footer">
+        <h2 class="off-screen">Footer</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-padding">
-                    <h5>About CAFE</h5>
+                    <h3 class="f-h5">About CAFE</h3>
                     <p>Community Art for Everyone is a registered 501(c)(3) non-profit in the United States.</p>
                     <p><i class="fas fa-envelope-open-text"></i> Email us at <a href="mailto:cafedmv@gmail.com">cafedmv@gmail.com</a></p>
                 </div>
                 <div class="col-md-4 footer-padding">
-                    <h5>Volunteer with Us</h5>
+                    <h3 class="f-h5">Volunteer with Us</h3>
                     <p><i class="fas fa-clipboard"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRkjYdbn5DkWDFj4KPk6kwrOHkursenSplU50pXM2_oDvfsA/viewform?usp=sf_link">Sign up to become a volunteer</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Connect with Us</h5>
-                    <p><i class="fab fa-meetup"></i> <a href="https://www.meetup.com/Community-Art/">Join us on MeetUp</a><br/><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/cafedmv/">Follow us on Facebook</a></p>
+                    <h3 class="f-h5">Connect with Us</h3>
+                    <p><i class="fab fa-meetup"></i> <a href="https://www.meetup.com/Community-Art/">Join us on MeetUp</a><br /><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/cafedmv/">Follow us on Facebook</a></p>
                 </div>
             </div>
         </div>
