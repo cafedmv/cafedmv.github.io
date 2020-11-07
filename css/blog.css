@@ -124,6 +124,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+    color: #222758 !important;
+    background-color: #fec905;
+    border-color: #3d489e;
+}
+
 .bg-pad {
     padding-right: 3rem;
 }
