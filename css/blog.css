@@ -529,6 +529,15 @@ a.skip-main:focus, a.skip-main:active {
     margin-top: 4rem;
 }
 
+.blog-footer ul {
+    padding-left:0px;
+    list-style: none;
+}
+
+.blog-footer a {
+    text-decoration:underline;
+}
+
 /* media queries */
 
 /* If the screen size is 500px wide or less, hide the element */

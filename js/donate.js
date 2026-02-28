@@ -3,22 +3,22 @@ $('#donate .btn').on('click', function(event) {
   var donation = $(this).find('input').val();
   if(donation==10){
       $("#paypal").attr("href", "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=22XGHRXPCW4GW&source=url");
-      $("#impact").text("Give a child her first art lesson through a community art workshop in the DMV. Art supplies don't cost much, but they go a long way with our youth. Help us empower our children!");
+      $("#impact").text("Give a child a sketchbook. Every sketchbook helps enable more students to participate at no cost!");
       $("#impact-title").text("Become a Donor");
   }
-    else if (donation==30){
+    else if (donation==50){
     $("#paypal").attr("href", "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FBWXEKNQ7VPFW&source=url");
-        $("#impact").text("Help supply materials for our next major community project. All funding will go into our community's next public piano, mural, sculpture, you name it!");
+        $("#impact").text("Buy art supplies for five students. This donation will help fund our next art class!");
         $("#impact-title").text("Become an All-Star");
     }
-    else if (donation==50){
+    else if (donation==100){
     $("#paypal").attr("href", "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C8FP9EFS4XQDG&source=url");
-        $("#impact").text("Get us one step closer to a living space to plan and host events. Having an office will allow us to focus on bringing art to the community around the clock. We also envision it as another shared space for our community to enjoy!");
+        $("#impact").text("Sponsor our next community art class. This will cover all expenses necessary for an entire event for 10 kids!");
         $("#impact-title").text("Become a Community Philanthropist!");
     }
     else if (donation==0){
     $("#paypal").attr("href", "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YL5APXPWNFFUQ&source=url");
-        $("#impact").text("The possibilities are endless, contact us so we can help make your ideas a reality!");
+        $("#impact").text("Choose how much you want to donate!");
         $("#impact-title").text("You Name the Gift");
     }
 });
