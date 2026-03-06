@@ -325,6 +325,11 @@ body {
     padding: 6rem 0rem;
 }
 
+.padding-top {
+    padding-top: 4rem;
+}
+
+
 h1,
 h2,
 h3,
@@ -580,6 +585,7 @@ a.skip-main:focus, a.skip-main:active {
     .lg-padding {
         padding: 4rem 0rem;
     }
+
 
     .nav-scroller {
         display: inline;
